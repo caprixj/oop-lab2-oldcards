@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Cards">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="OldCard" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Thema" type="xs:string"/>
+                            <xs:element name="Type">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Greeting"/>
+                                        <xs:enumeration value="Advertisement"/>
+                                        <xs:enumeration value="Ordinary"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Sent" type="xs:boolean"/>
+                            <xs:element name="Country" type="xs:string"/>
+                            <xs:element name="Year">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:positiveInteger">
+                                        <xs:minInclusive value="1869"/>
+                                        <xs:maxInclusive value="1999"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Author" type="xs:string"/>
+                            <xs:element name="Valuable">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Historical"/>
+                                        <xs:enumeration value="Collection"/>
+                                        <xs:enumeration value="Thematic"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

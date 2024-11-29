@@ -1,0 +1,29 @@
+<Cards>
+    <OldCard>
+        <Thema>Christmas</Thema>
+        <Type>Greeting</Type>
+        <Sent>false</Sent>
+        <Country>Italy</Country>
+        <Year>1968</Year>
+        <Author>Romeo Quintiliani</Author>
+        <Valuable>Thematic</Valuable>
+    </OldCard>
+    <OldCard>
+        <Thema>Birthday</Thema>
+        <Type>Greeting</Type>
+        <Sent>true</Sent>
+        <Country>Poland</Country>
+        <Year>1999</Year>
+        <Author>Dmytro Nikonenko</Author>
+        <Valuable>Collection</Valuable>
+    </OldCard>
+    <OldCard>
+        <Thema>IKEA Furniture</Thema>
+        <Type>Advertisement</Type>
+        <Sent>true</Sent>
+        <Country>England</Country>
+        <Year>1985</Year>
+        <Author>Tomas Sheldon</Author>
+        <Valuable>Thematic</Valuable>
+    </OldCard>
+</Cards>
